@@ -273,7 +273,7 @@ h1 {
      .contentDiv {
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
+      align-items: start;
       padding: 5px;
 
      }
@@ -286,10 +286,14 @@ h1 {
      .detail {
       display: flex;
       justify-content: center;
+      align-items: center;
      }
      
      .detail .detailText {
       color: var(--darkGrayishBlue);
+      margin: 2px;
+      font-size: 1rem;
+      text-align: center;
 
      }
 
@@ -300,7 +304,8 @@ h1 {
      .detail .deletePannier button {
       border: none;
       background: white;
-      margin-left: 5px;
+      margin-left: 10px;
+      margin-top: 5px;
      }
 
      .detail .deletePannier button img {

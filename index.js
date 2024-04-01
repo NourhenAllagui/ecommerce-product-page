@@ -24,7 +24,7 @@ pannier.innerHTML = `
    <p>${prix.innerText} x ${num.innerText} <strong>$${prixStr * num.innerText}</strong></p>
    </div>
    <div class='deletePannier'>
-  <button><img src='../images/icon-delete.svg'></button>
+  <button><img src='./images/icon-delete.svg'></button>
   </div>
   </div>
   </div>
