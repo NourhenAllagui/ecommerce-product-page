@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <div class="navbar">
+    <h1><img src="../images/logo.svg" alt=""></h1>
+    <div class="links">
+    <ul>
+      <li><a href="">Collections</a></li>
+      <li><a href="">Men</a></li>
+      <li><a href="">Women</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    </div>
+    <div class="rigthLinks">
+      <div class="dropdown">
+      <button class="dropdown-btn"><img src="../images/icon-cart.svg" alt=""></button>
+      <div class="dropdown-content">
+        <div class="cart">
+          <h4>Cart</h4>
+        </div>
+        <p class="empty change">Your cart is empty.</p>
+      </div>
+    </div>
+      <div class="user">
+      <img src="../images/image-avatar.png" alt="user">
+    </div>
+    </div>
+
+  </div>
+  <div class="galeriesContent">
+    <div id="galerie">
+      <dl id="photo">
+        <dd><img id="la_photo" src="../images/image-product-1.jpg" alt="photo Sneakers" width="300px"></dd>
+      </dl>
+      <ul id="galerie_mini">
+        <li><a hreflang="../images/image-product-1.jpg"><img src="../images/image-product-1-thumbnail.jpg" alt=""></a></li>
+        <li><a hreflang="../images/image-product-2.jpg"><img src="../images/image-product-2-thumbnail.jpg" alt=""></a></li>
+        <li><a hreflang="../images/image-product-3.jpg"><img src="../images/image-product-3-thumbnail.jpg" alt=""></a></li>
+        <li><a hreflang="../images/image-product-4.jpg"><img src="../images/image-product-4-thumbnail.jpg" alt=""></a></li>
+      </ul>
+    </div>
+    <div class="details">
+      <h5>Sneaker company </h5>
+      <h1 class="titleSneaker">Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+       durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+       <div class="redPrix">
+       <p class="prix">$125.00</p>
+       <p class="reduction">50%</p>
+       </div>
+       <p class="realPrice">$250.00</p>
+       <div class="buttons">
+       <button class="btn btnMoins"><img src="../images/icon-minus.svg" alt=""></button>
+       <button class="btn num">0</button>
+       <button class="btn btnPlus"><img src="../images/icon-plus.svg" alt=""></button>
+       <button class="btn-shop"><img src="../images/icon-cart.svg" alt="">Add to cart</button>
+       </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nourhen</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

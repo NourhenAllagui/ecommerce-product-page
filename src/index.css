@@ -1,0 +1,328 @@
+:root {
+  --orange: hsl(26, 100%, 55%);
+  --paleOrange: hsl(25, 100%, 94%);
+  --veryDarkBlue: hsl(220, 13%, 13%);
+  --darkGrayishBlue: hsl(219, 9%, 45%);
+  --grayishBlue: hsl(220, 14%, 75%);
+  --lightGrayishBlue: hsl(223, 64%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+   --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.navbar {
+ width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--grayishBlue);
+}
+h1 {
+  font-weight: 900;
+}
+ ul {
+  list-style: none;
+  display: flex;
+ }
+
+ li {
+  margin: 0 23px;
+ }
+
+ a {
+  text-decoration: none;
+  color: var(--darkGrayishBlue);
+ }
+
+ .links ul li a:hover {
+  border-bottom: 3px solid var(--orange);
+  padding-bottom: 40px;
+  color: black;
+  font-weight: 600; 
+ }
+
+ .dropdown {
+  position: relative;
+  display: inline-block;
+ }
+
+ .dropdown-content {
+    display: none;
+    transition: display 0.5s;
+    position: absolute;
+    z-index: 1;
+    right: -129px;
+    top: 50px;
+    margin-left: 0px;
+    background: var(--white);
+    width: 360px;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+ }
+ .cart {
+  text-align: start;
+  padding: 20px 10px;
+  border-bottom: 1px solid var(--grayishBlue);
+ }
+ .empty {
+  padding: 20px;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+  display: block;
+ }
+ .dropdown-btn {
+  border: none;
+  background: transparent;
+ }
+ .user > img {
+  border: 3px solid var(--orange);
+  border-radius: 60px;
+  width: 60px;
+  margin-left: 40px;
+ }
+ .rigthLinks {
+  display: flex;
+  align-items: center;
+ }
+.galeriesContent {
+  height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+ #galerie {
+  width: auto;
+  background: var(--white);
+  border-radius: 5px;
+  margin-top: 25px;
+  padding: 15px;
+  text-align: center;
+ }
+
+ #galerie_mini {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  list-style: none;
+ }
+
+ #galerie_mini li {
+  float: left;
+
+ }
+ #galerie_mini li a img:hover {
+  border: 2px solid var(--orange);
+  opacity: 0.5;
+ }
+
+ #galerie_mini li a img {
+  margin: 2px 1px;
+  border-radius: 15px;
+  width: 90px;
+ }
+
+ #la_photo {
+  margin-top: 54px;
+    width: 446px;
+    height: 423px;
+    border-radius: 20px;
+    margin-bottom: 17px;
+ }
+
+ .details {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+ }
+
+  .details h5 {
+    text-transform: uppercase;
+    color: var(--orange);
+  }
+
+  .details h1 {
+    margin-top: 10px;
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+  }
+
+  .details p {
+    color: var(--darkGrayishBlue);
+    font-size: 1rem;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+   .details .redPrix {
+    display: flex;
+   }
+  .details .redPrix .prix {
+    font-weight: 900;
+    font-size: 2rem;
+    color: black;
+  }
+
+  .details .redPrix .reduction {
+    margin-left: 5px;
+    background: var(--paleOrange);
+    color: var(--orange);
+    width: 40px;
+    height: 20px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .details .realPrice {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    text-decoration: line-through;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 21px 0 0 23px;
+  }
+
+  .buttons .btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background: var(--lightGrayishBlue);
+
+  }
+
+  .buttons .btnMoins {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+     }
+    .buttons .btnMoins:hover, .btnPlus:hover,  .btn-shop:hover {
+      opacity: 0.5;
+    }
+     .buttons .btnPlus {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 20px;
+     }
+
+     .buttons .num {
+      font-weight: 600;
+      font-size: 1rem;
+
+     }
+
+  .buttons .btn-shop {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    color: var(--white);
+    background: var(--orange);
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    cursor: pointer;
+     }
+
+     .buttons .btn-shop img {
+      margin-right: 20px;
+      color: white;
+     }
+
+     .attribution {
+      margin-top: 30px;
+     }
+
+     .divPannier {
+      display: flex;
+      flex-direction: column;
+     }
+     .contentDiv {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 5px;
+
+     }
+     .contentDiv img {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+     }
+
+     .detail {
+      display: flex;
+      justify-content: center;
+     }
+     
+     .detail .detailText {
+      color: var(--darkGrayishBlue);
+
+     }
+
+     .detail .detailText p strong {
+      color: black;
+     }
+
+     .detail .deletePannier button {
+      border: none;
+      background: white;
+      margin-left: 5px;
+     }
+
+     .detail .deletePannier button img {
+      width: 20px;
+      height: 20px;
+     }
+
+
+     .btn-chekout {
+      display: flex;
+    width: 100%;
+    height: 50px;
+    color: var(--white);
+    background: var(--orange);
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    cursor: pointer;
+     }
