@@ -10,6 +10,7 @@ const plus = document.querySelector('.btnPlus');
 const num = document.querySelector('.num');
 const shop = document.querySelector('.btn-shop');
 const pannier = document.querySelector('.change');
+const sidebar = document.querySelector('.sidebar');
 const prixStr= prix.innerText.slice(1, prix.innerText.length);
 shop.addEventListener('click', event => {
 pannier.innerHTML = `
@@ -49,4 +50,12 @@ for (let i = 0; i < lien.length; i++) {
     return false;
   })
   
+}
+
+function showMenu() {
+   sidebar.style.display ='flex';
+}
+
+function hideSidebar() {
+  sidebar.style.display ='none';
 }

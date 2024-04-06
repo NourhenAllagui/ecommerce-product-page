@@ -37,9 +37,18 @@ body {
     padding: 20px 0;
     border-bottom: 1px solid var(--grayishBlue);
 }
-h1 {
-  font-weight: 900;
+.leftSide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
+ .navbar .leftSide svg {
+  display: none;
+ }
+ .navbar .leftSide img {
+  margin: 0 15px;
+ }
  ul {
   list-style: none;
   display: flex;
@@ -53,7 +62,31 @@ h1 {
   text-decoration: none;
   color: var(--darkGrayishBlue);
  }
-
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 25px;
+}
+.sidebar .links ul {
+ display: flex;
+ flex-direction: column;
+}
+.sidebar .links ul  li {
+  margin: 20px 105px;
+}
+.sidebar .links ul  li a:hover {
+border-bottom: none;
+padding-bottom: 5px;
+}
  .links ul li a:hover {
   border-bottom: 3px solid var(--orange);
   padding-bottom: 40px;
@@ -331,3 +364,91 @@ h1 {
     flex-wrap: nowrap;
     cursor: pointer;
      }
+
+     @media (max-width: 480px) {
+      .navbar {
+        width: 100%;
+        padding: 20px 15px;
+      }
+      .navbar .leftSide svg {
+        display: inherit;
+        margin-left: 5px;
+      }
+      .navbar ul li {
+        display: none;
+      }
+      .user > img {
+    border: 3px solid var(--orange);
+    border-radius: 60px;
+    width: 35px;
+    margin-left: 15px;
+}
+.sidebar {
+  width: 100%;
+}
+.galeriesContent {
+    height: 600px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+#galerie_mini li a img {
+   display: none;
+}
+#la_photo {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 20px 20px;
+}
+.buttons {
+    margin: 15px 20px 0 3px;
+}
+.dropdown-content {
+    right: -50px;
+    top: 50px;
+    width: 340px;
+}
+#galerie {
+    width: auto;
+    background: var(--white);
+    border-radius: 5px;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+}
+}
+
+@media (min-width: 481px) and (max-width: 1025px) {
+  .navbar {
+    width: 100%;
+    padding: 20px;
+}
+.dropdown-content {
+    right: -43px;
+    top: 46px;
+    width: 380px;
+}
+.links ul li {
+    margin: 0 12px;
+}
+  .galeriesContent {
+        height: 100%;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+#galerie {
+    margin-top: 10px;
+    padding: 0 0 30px 0;
+}
+.details {
+    width: 84%;
+}
+}
